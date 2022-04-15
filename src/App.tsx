@@ -4,6 +4,6 @@ const App = () => (
       <h1>Starter</h1>
     </header>
   </div>
-);
+)
 
-export default App;
+export default App

@@ -1,7 +1,17 @@
 module.exports = {
-  content: ["./src/**/*.{html,js,jsx,tsx}"],
+  content: [
+    './src/**/*.{js,jsx,ts,tsx}',
+  ],
   theme: {
-    extend: {},
+    extend: {
+      maxWidth: {
+        '2xs': '12.5rem /*200px*/',
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    /* eslint-disable global-require */
+    require('@tailwindcss/forms'),
+    /* eslint-enable global-require */
+  ],
 }
